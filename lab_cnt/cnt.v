@@ -7,7 +7,7 @@
  input  rst_n;
  
  reg [9:0] cnt;
- wire [9:0] cnt_nxt;
+ reg [9:0] cnt_nxt;
  
  // sequential logic 
  always@(posedge clk or negedge rst_n)
@@ -16,6 +16,8 @@
      
  
  // combinational logic
-  assign cnt_nxt = cnt + 1;
+ always@(*) begin
+   cnt_nxt = cnt + 1;
+end
    
  endmodule
