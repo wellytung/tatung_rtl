@@ -18,6 +18,6 @@
  // combinational logic
  always@(*) begin
    cnt_nxt = cnt + 1;
-end
+ end
    
  endmodule
