@@ -3,10 +3,11 @@ all:
 	vvp test
 
 vcs:
-	vcs -sv -full64 -fsdb -kdb seq.v tb.v
+	vcs -sv -full64 -fsdb -kdb cnt.v tb.v
+	./simv
 
 verdi:
-	verdi tb.v seq.v
+	verdi tb.v cnt.v
 
 
 

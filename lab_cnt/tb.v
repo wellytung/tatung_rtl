@@ -20,7 +20,7 @@
 
 
 initial begin
-  $fsdbDumpfile("seq.fsdb");
+  $fsdbDumpfile("cnt.fsdb");
   $fsdbDumpvars(tb, 0);
 
   repeat(50)@(posedge clk); 
