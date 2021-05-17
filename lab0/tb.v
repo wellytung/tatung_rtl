@@ -46,7 +46,7 @@
   @(posedge clk) seq_in <= 1'b1; 
 
   // random input testing
-  for ( i = 0 ; i < 50 ; i = i+1 ) begin
+  for ( i = 0 ; i < 10000 ; i = i+1 ) begin
     random_dly = $random;
     repeat(random_dly) @(posedge clk);
     seq_in <= $random;
